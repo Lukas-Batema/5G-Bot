@@ -73,4 +73,4 @@ if (reason == "help"){
         message.channel.send(RickrollLink);
       }
     }
-}j
+}
