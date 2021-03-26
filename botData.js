@@ -14,20 +14,20 @@ var BotConfiguration = [
 ];
 
 bot.registry
-	.registerDefaultTypes()
-	.registerGroups([
+    .registerDefaultTypes()
+    .registerGroups([
         ['admin', 'Admin'],
         ['economy', 'Economy'],
         ['simple', 'Simple'],
-	])
-	.registerDefaultGroups()
-	.registerDefaultCommands()
-	.registerCommandsIn(path.join(__dirname, 'commands'));
+    ])
+    .registerDefaultGroups()
+    .registerDefaultCommands()
+    .registerCommandsIn(path.join(__dirname, 'commands'));
 //End of command registration
 
 bot.login(key);
 
-bot.on('ready', function(){
+bot.on('ready', function () {
     bot.user.setActivity(ActivityMessage);
     console.log(`Successfully Signed Into: ${bot.user.tag}`);
     console.log(`Bot Developer: ${Developer}`);
