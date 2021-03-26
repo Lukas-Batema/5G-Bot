@@ -18,7 +18,7 @@ module.exports = class rpg extends Command {
     let reason = words.slice(0).join(' ');
 
     if (reason == "" || reason == "help") {
-        const rpgHelp = new discord.messageEmbed()
+        const rpgHelp = new discord.MessageEmbed()
           .setTimestamp()
           .setColor("RANDOM")
           .setTitle("RPG Help")
