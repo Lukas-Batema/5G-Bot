@@ -25,7 +25,7 @@ module.exports = class rpg extends Command {
           .setDescription(`
             This Command is a WIP, please check back later!
           `)
-        message.channel.send(Scramble3);
+        message.channel.send(rpgHelp);
     }
   }
 }
