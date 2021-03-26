@@ -6,5 +6,26 @@ const db = require("quick.db"); //Refer to https://quickdb.js.org/overview/docs 
 const path = require("path");
 
 const bot = new CommandoClient({
-	commandPrefix: BotPrefix,
+	commandPrefix: botPrefix,
+});
+
+bot.registry
+	.registerDefaultTypes()
+	.registerGroups([
+		['admin', 'Admin'],
+		['economy', 'Economy'],
+		['simple', 'Simple'],
+	])
+	.registerDefaultGroups()
+	.registerDefaultCommands()
+	.registerCommandsIn(path.join(__dirname, 'commands'));
+//End of command registration
+
+bot.login(key);
+
+bot.on('ready', function () {
+	bot.user.setActivity(activityMessage);
+	console.log(`Successfully Signed Into: ${bot.user.tag}`);
+	console.log(`Bot Developer: ${Developer}`);
+	console.log(`Running Version: ${Version}`);
 });

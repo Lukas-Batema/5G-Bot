@@ -9,28 +9,6 @@ var BotData = [
 var BotConfiguration = [
     //--------------------------------------------------
     //Bot Configuration---------------------------------
-    BotPrefix = "5G",
-    ActivityMessage = "Data Usage High - 5G G5",
+    botPrefix = "5G",
+    activityMessage = "Data Usage High - 5G G5",
 ];
-
-bot.registry
-    .registerDefaultTypes()
-    .registerGroups([
-        ['admin', 'Admin'],
-        ['economy', 'Economy'],
-        ['simple', 'Simple'],
-    ])
-    .registerDefaultGroups()
-    .registerDefaultCommands()
-    .registerCommandsIn(path.join(__dirname, 'commands'));
-//End of command registration
-
-bot.login(key);
-
-bot.on('ready', function () {
-    bot.user.setActivity(ActivityMessage);
-    console.log(`Successfully Signed Into: ${bot.user.tag}`);
-    console.log(`Bot Developer: ${Developer}`);
-    console.log(`Running Version: ${Version}`);
-});
-
