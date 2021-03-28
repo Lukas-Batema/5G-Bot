@@ -1,10 +1,7 @@
 {
   "dependencies": {
     "discord.js": "^12.5.1",
-<<<<<<< HEAD
-    "discord.js-commando": "^0.12.3"
-=======
     "discord.js-commando": "^0.12.3",
->>>>>>> 3352f23c3e059c625dddfdbed6d01105a9db179c
+    "quick.db": "^7.1.3"
   }
 }
