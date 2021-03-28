@@ -1,7 +1,7 @@
 const { Command } = require('discord.js-commando');
-const BotData = require("../../BotData.js");
+const BotData = require("../../botData.js");
 const discord = require("discord.js");
-const db = require("quick.db");
+
 
 module.exports = class cubeScrambleCommand extends Command {
 constructor(client) {
@@ -16,26 +16,14 @@ constructor(client) {
  run(message, args) {
  let words = args.split(' ');
  let reason = words.slice(0).join(' ');
-  if (reason == "help") {
+  if (reason == "" || reason == "help" || reason == "?") {
     const CubeScrambleHelp = new discord.MessageEmbed()
       .setTimestamp()
       .setColor("RANDOM")
       .setTitle("Cube Scramble Help")
       .setDescription(`
         **Usage:**
-          a. -scramble <3|help>
-          \taa. 3: Scrambles a 3x3!
-          \tab. help: Shows this menu!
-      `)
-    message.channel.send(CubeScrambleHelp);
-  } else if (reason == "") {
-    const CubeScrambleHelp = new discord.MessageEmbed()
-      .setTimestamp()
-      .setColor("RANDOM")
-      .setTitle("Cube Scramble Help")
-      .setDescription(`
-        **Usage:**
-          a. -scramble <3|help>
+          a. -scramble <2|3|4|help>
           \taa. 3: Scrambles a 3x3!
           \tab. help: Shows this menu!
       `)
