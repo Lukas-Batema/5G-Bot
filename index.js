@@ -2,7 +2,9 @@ const { CommandoClient } = require("discord.js-commando"); //Refer to https://di
 const BotData = require("./botData.js");//Imports custom BotData information for the bot.
 const discord = require("discord.js"); //Refer to https://discord.js.org/#/docs/main/stable/general/welcome for help.
 const token = require("./token.js"); //Imports the token key for the bot to launch.
-const db = require("quick.db"); //Refer to https://quickdb.js.org/overview/docs for help.
+const StormDB = require("stormdb");
+const engine = new StormDB.localFileEngine("./db.stormdb");
+const db = new StormDB(engine);
 const path = require("path");
 
 const bot = new CommandoClient({

@@ -1,7 +1,9 @@
 const { Command } = require('discord.js-commando');
 const BotData = require("../../BotData.js");
 const discord = require("discord.js");
-const db = require("quick.db");
+const StormDB = require("stormdb");
+const engine = new StormDB.localFileEngine("./db.stormdb");
+const db = new StormDB(engine);
 
 module.exports = class RickrollCommand extends Command {
 constructor(client) {

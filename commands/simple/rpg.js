@@ -1,7 +1,9 @@
 const { Command } = require('discord.js-commando');
 const BotData = require("../../botData.js");
 const discord = require("discord.js");
-const db = require("quick.db");
+const StormDB = require("stormdb");
+const engine = new StormDB.localFileEngine("./db.stormdb");
+const db = new StormDB(engine);
 
 module.exports = class rpg extends Command {
   constructor(client) {
@@ -28,13 +30,349 @@ module.exports = class rpg extends Command {
         message.channel.send(rpgHelp);
         console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistantly annoy GameHogPlays#0119 on Discord of this error!")
     } else if (reason == "quickfight" || reason == "quickf" || reason == "qfight" || reason == "qf") {
+      var enemyFoughtRandom = Math.randomInt(9) + 1;
+      var healthLostRandom = Math.randomInt(9) + 1;
+      var healthLost;
+      var enemyFought;
+      var totalHealth = 100;
+      if (enemyFoughtRandom == 1) {
+        enemyFought = "Slime";
+        if (healthLostRandom == 1) {
+          healthLost = totalHealth - (totalHealth / 1.25);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 2) {
+          healthLost = totalHealth;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 3) {
+          healthLost = totalHealth - (totalHealth / 2);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 4) {
+          healthLost = totalHealth - (totalHealth / 1.75);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 5) {
+          healthLost = totalHealth - (totalHealth / 1.50);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 6) {
+          healthLost = totalHealth - (totalHealth / 1.35);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 7) {
+          healthLost = totalHealth - (totalHealth / 1.40);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 8) {
+          healthLost = totalHealth - (totalHealth / 1.60);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 9) {
+          healthLost = totalHealth - (totalHealth / 3);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 10) {
+          healthLost = totalHealth - (totalHealth / 5.6);
+          totalHealth = totalHealth - healthLost;
+        }
+      } else if (enemyFoughtRandom == 2) {
+        enemyFought = "Cake";
+        if (healthLostRandom == 1) {
+          healthLost = totalHealth - (totalHealth / 1.25);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 2) {
+          healthLost = totalHealth;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 3) {
+          healthLost = totalHealth - (totalHealth / 2);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 4) {
+          healthLost = totalHealth - (totalHealth / 1.75);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 5) {
+          healthLost = totalHealth - (totalHealth / 1.50);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 6) {
+          healthLost = totalHealth - (totalHealth / 1.35);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 7) {
+          healthLost = totalHealth - (totalHealth / 1.40);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 8) {
+          healthLost = totalHealth - (totalHealth / 1.60);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 9) {
+          healthLost = totalHealth - (totalHealth / 3);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 10) {
+          healthLost = totalHealth - (totalHealth / 5.6);
+          totalHealth = totalHealth - healthLost;
+        }
+      } else if (enemyFoughtRandom == 3) {
+        enemyFought = "Dog";
+        if (healthLostRandom == 1) {
+          healthLost = totalHealth - (totalHealth / 1.25);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 2) {
+          healthLost = totalHealth;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 3) {
+          healthLost = totalHealth - (totalHealth / 2);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 4) {
+          healthLost = totalHealth - (totalHealth / 1.75);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 5) {
+          healthLost = totalHealth - (totalHealth / 1.50);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 6) {
+          healthLost = totalHealth - (totalHealth / 1.35);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 7) {
+          healthLost = totalHealth - (totalHealth / 1.40);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 8) {
+          healthLost = totalHealth - (totalHealth / 1.60);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 9) {
+          healthLost = totalHealth - (totalHealth / 3);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 10) {
+          healthLost = totalHealth - (totalHealth / 5.6);
+          totalHealth = totalHealth - healthLost;
+        }
+      } else if (enemyFoughtRandom == 4) {
+        enemyFought = "Radiation";
+        if (healthLostRandom == 1) {
+          healthLost = totalHealth - (totalHealth / 1.25);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 2) {
+          healthLost = totalHealth;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 3) {
+          healthLost = totalHealth - (totalHealth / 2);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 4) {
+          healthLost = totalHealth - (totalHealth / 1.75);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 5) {
+          healthLost = totalHealth - (totalHealth / 1.50);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 6) {
+          healthLost = totalHealth - (totalHealth / 1.35);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 7) {
+          healthLost = totalHealth - (totalHealth / 1.40);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 8) {
+          healthLost = totalHealth - (totalHealth / 1.60);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 9) {
+          healthLost = totalHealth - (totalHealth / 3);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 10) {
+          healthLost = totalHealth - (totalHealth / 5.6);
+          totalHealth = totalHealth - healthLost;
+        }
+      } else if (enemyFoughtRandom == 5) {
+        enemyFought = "USA";
+        if (healthLostRandom == 1) {
+          healthLost = totalHealth - (totalHealth / 1.25);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 2) {
+          healthLost = totalHealth;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 3) {
+          healthLost = totalHealth - (totalHealth / 2);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 4) {
+          healthLost = totalHealth - (totalHealth / 1.75);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 5) {
+          healthLost = totalHealth - (totalHealth / 1.50);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 6) {
+          healthLost = totalHealth - (totalHealth / 1.35);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 7) {
+          healthLost = totalHealth - (totalHealth / 1.40);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 8) {
+          healthLost = totalHealth - (totalHealth / 1.60);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 9) {
+          healthLost = totalHealth - (totalHealth / 3);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 10) {
+          healthLost = totalHealth - (totalHealth / 5.6);
+          totalHealth = totalHealth - healthLost;
+        }
+      } else if (enemyFoughtRandom == 6) {
+        enemyFought = "Chair";
+        if (healthLostRandom == 1) {
+          healthLost = totalHealth - (totalHealth / 1.25);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 2) {
+          healthLost = totalHealth;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 3) {
+          healthLost = totalHealth - (totalHealth / 2);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 4) {
+          healthLost = totalHealth - (totalHealth / 1.75);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 5) {
+          healthLost = totalHealth - (totalHealth / 1.50);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 6) {
+          healthLost = totalHealth - (totalHealth / 1.35);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 7) {
+          healthLost = totalHealth - (totalHealth / 1.40);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 8) {
+          healthLost = totalHealth - (totalHealth / 1.60);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 9) {
+          healthLost = totalHealth - (totalHealth / 3);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 10) {
+          healthLost = totalHealth - (totalHealth / 5.6);
+          totalHealth = totalHealth - healthLost;
+        }
+      } else if (enemyFoughtRandom == 7) {
+        enemyFought = "Ash Ketchum";
+        if (healthLostRandom == 1) {
+          healthLost = totalHealth - (totalHealth / 1.25);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 2) {
+          healthLost = totalHealth;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 3) {
+          healthLost = totalHealth - (totalHealth / 2);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 4) {
+          healthLost = totalHealth - (totalHealth / 1.75);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 5) {
+          healthLost = totalHealth - (totalHealth / 1.50);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 6) {
+          healthLost = totalHealth - (totalHealth / 1.35);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 7) {
+          healthLost = totalHealth - (totalHealth / 1.40);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 8) {
+          healthLost = totalHealth - (totalHealth / 1.60);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 9) {
+          healthLost = totalHealth - (totalHealth / 3);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 10) {
+          healthLost = totalHealth - (totalHealth / 5.6);
+          totalHealth = totalHealth - healthLost;
+        }
+      } else if (enemyFoughtRandom == 8) {
+        enemyFought = "Steve";
+        if (healthLostRandom == 1) {
+          healthLost = totalHealth - (totalHealth / 1.25);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 2) {
+          healthLost = totalHealth;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 3) {
+          healthLost = totalHealth - (totalHealth / 2);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 4) {
+          healthLost = totalHealth - (totalHealth / 1.75);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 5) {
+          healthLost = totalHealth - (totalHealth / 1.50);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 6) {
+          healthLost = totalHealth - (totalHealth / 1.35);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 7) {
+          healthLost = totalHealth - (totalHealth / 1.40);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 8) {
+          healthLost = totalHealth - (totalHealth / 1.60);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 9) {
+          healthLost = totalHealth - (totalHealth / 3);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 10) {
+          healthLost = totalHealth - (totalHealth / 5.6);
+          totalHealth = totalHealth - healthLost;
+        }
+      } else if (enemyFoughtRandom == 9) {
+        enemyFought = "Alex";
+        if (healthLostRandom == 1) {
+          healthLost = totalHealth - (totalHealth / 1.25);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 2) {
+          healthLost = totalHealth;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 3) {
+          healthLost = totalHealth - (totalHealth / 2);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 4) {
+          healthLost = totalHealth - (totalHealth / 1.75);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 5) {
+          healthLost = totalHealth - (totalHealth / 1.50);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 6) {
+          healthLost = totalHealth - (totalHealth / 1.35);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 7) {
+          healthLost = totalHealth - (totalHealth / 1.40);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 8) {
+          healthLost = totalHealth - (totalHealth / 1.60);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 9) {
+          healthLost = totalHealth - (totalHealth / 3);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 10) {
+          healthLost = totalHealth - (totalHealth / 5.6);
+          totalHealth = totalHealth - healthLost;
+        }
+      } else if (enemyFoughtRandom == 10) {
+        enemyFought = "Your Mom";
+        if (healthLostRandom == 1) {
+          healthLost = totalHealth - (totalHealth / 1.25);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 2) {
+          healthLost = totalHealth;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 3) {
+          healthLost = totalHealth - (totalHealth / 2);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 4) {
+          healthLost = totalHealth - (totalHealth / 1.75);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 5) {
+          healthLost = totalHealth - (totalHealth / 1.50);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 6) {
+          healthLost = totalHealth - (totalHealth / 1.35);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 7) {
+          healthLost = totalHealth - (totalHealth / 1.40);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 8) {
+          healthLost = totalHealth - (totalHealth / 1.60);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 9) {
+          healthLost = totalHealth - (totalHealth / 3);
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 10) {
+          healthLost = totalHealth - (totalHealth / 5.6);
+          totalHealth = totalHealth - healthLost;
+        }
+      }
       const rpgQuickFight = new discord.MessageEmbed()
           .setTimestamp()
           .setColor("RANDOM")
           .setTitle("RPG Quick Fight")
-          .setDescription(`
-            This Command is a WIP, please check back later!
-          `)
+          .setDescription(
+            `You fought ` + enemyFought + ` and lost ` + healthLost + `. You have ` + totalHealth + ` left!`
+          )
         message.channel.send(rpgQuickFight);
         console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistantly annoy GameHogPlays#0119 on Discord of this error!")
     } else if (reason == "adventure" || reason == "adv" || reason == "travel") {
@@ -63,11 +401,15 @@ module.exports = class rpg extends Command {
         .setColor("RANDOM")
         .setTitle("RPG Shop")
         .setDescription(`
-          This Command is a WIP, please check back later!
+          1. Potion | 100 Data Points
+          2. Wooden Sword | 150 Data Points
+          3. Wooden Armor | 250 Data Points
+          4. Shield | 200 Data Points
+          5. Shroud of Revival | 1000 Data Points
         `)
       message.channel.send(rpgShop);
       console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistantly annoy GameHogPlays#0119 on Discord of this error!")
-    } else if (reason == "buy" || reason == "purchase" || reason == "$") {
+    } else if (reason == "buy potion" || reason == "purchase potion" || reason == "$ potion" || reason == "buy Potion" || reason == "purchase Potion" || reason == "$ Potion") {
       const rpgPurchase = new discord.MessageEmbed()
         .setTimestamp()
         .setColor("RANDOM")
@@ -76,6 +418,26 @@ module.exports = class rpg extends Command {
           This Command is a WIP, please check back later!
         `)
       message.channel.send(rpgPurchase);
+      console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistantly annoy GameHogPlays#0119 on Discord of this error!")
+    } else if (reason == "inventory" || reason == "invent" || reason == "inv") {
+      const rpgInventory = new discord.MessageEmbed()
+        .setTimestamp()
+        .setColor("RANDOM")
+        .setTitle("RPG Inventory")
+        .setDescription(`
+          This Command is a WIP, please check back later!
+        `)
+      message.channel.send(rpgInventory);
+      console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistantly annoy GameHogPlays#0119 on Discord of this error!")
+    } else if (reason == "profile" || reason == "prof" || reason == "p") {
+      const rpgProfile = new discord.MessageEmbed()
+        .setTimestamp()
+        .setColor("RANDOM")
+        .setTitle("RPG Inventory")
+        .setDescription(`
+          This Command is a WIP, please check back later!
+        `)
+      message.channel.send(rpgProfile);
       console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistantly annoy GameHogPlays#0119 on Discord of this error!")
     }
   }
