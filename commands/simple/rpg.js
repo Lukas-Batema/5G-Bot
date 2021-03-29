@@ -30,8 +30,8 @@ module.exports = class rpg extends Command {
         message.channel.send(rpgHelp);
         console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistantly annoy GameHogPlays#0119 on Discord of this error!")
     } else if (reason == "quickfight" || reason == "quickf" || reason == "qfight" || reason == "qf") {
-      var enemyFoughtRandom = Math.randomInt(9) + 1;
-      var healthLostRandom = Math.randomInt(9) + 1;
+      var enemyFoughtRandom = Math.floor(Math.random() * 9) + 1;
+      var healthLostRandom = Math.floor(Math.random() * 9) + 1;
       var healthLost;
       var enemyFought;
       var totalHealth = 100;
