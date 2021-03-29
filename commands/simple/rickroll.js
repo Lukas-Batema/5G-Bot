@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const BotData = require("../../BotData.js");
+const botData = require("../../botData.js");
 const discord = require("discord.js");
 const StormDB = require("stormdb");
 const engine = new StormDB.localFileEngine("./db.stormdb");
