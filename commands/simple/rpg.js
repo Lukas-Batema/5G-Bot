@@ -31,8 +31,8 @@ module.exports = class rpg extends Command {
       console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistently annoy GameHogPlays#0119 on Discord of this error!")
     } else if (reason == "quickfight" || reason == "quickf" || reason == "qfight" || reason == "qf") {
 
-      db.get("users").push({ name: new discord.GuildMember() });
-      db.save();
+      db.get("users").set((new discord.GuildMember().id).totalHealth, 100)
+      .save();
 
       var enemyFoughtRandom = Math.floor(Math.random() * 10) + 1;
       var healthLostRandom = Math.floor(Math.random() * 100);
