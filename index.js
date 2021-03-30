@@ -30,4 +30,6 @@ bot.on('ready', function () {
 	console.log(`Successfully Signed Into: ${bot.user.tag}`);
 	console.log(`Bot Developer: ${Developer}`);
 	console.log(`Running Version: ${Version}`);
+
+	db.default({ users: [] });
 });
