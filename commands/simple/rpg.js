@@ -31,41 +31,67 @@ module.exports = class rpg extends Command {
       console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistently annoy GameHogPlays#0119 on Discord of this error!")
     } else if (reason == "quickfight" || reason == "quickf" || reason == "qfight" || reason == "qf") {
       var enemyFoughtRandom = Math.floor(Math.random() * 10) + 1;
-      var healthLostRandom = Math.floor(Math.random() * 10) + 1;
+      var healthLostRandom = Math.floor(Math.random() * 101) + 1;
       var healthLost;
       var enemyFought;
       var totalHealth = 100;
       if (enemyFoughtRandom == 1) {
         enemyFought = "Slime";
         if (healthLostRandom == 1) {
-          healthLost = totalHealth - (Math.round(totalHealth / 1.25));
-          totalHealth = totalHealth - healthLost;
+          healthLost = 0;
         } else if (healthLostRandom == 2) {
-          healthLost = totalHealth;
+          healthLost = 1;
           totalHealth = totalHealth - healthLost;
         } else if (healthLostRandom == 3) {
-          healthLost = totalHealth - (Math.round(totalHealth / 2));
+          healthLost = 2;
           totalHealth = totalHealth - healthLost;
         } else if (healthLostRandom == 4) {
-          healthLost = totalHealth - (Math.round(totalHealth / 1.75));
+          healthLost = 3;
           totalHealth = totalHealth - healthLost;
         } else if (healthLostRandom == 5) {
-          healthLost = totalHealth - (Math.round(totalHealth / 1.50));
+          healthLost = 4
           totalHealth = totalHealth - healthLost;
         } else if (healthLostRandom == 6) {
-          healthLost = totalHealth - (Math.round(totalHealth / 1.35));
+          healthLost = 5;
           totalHealth = totalHealth - healthLost;
         } else if (healthLostRandom == 7) {
-          healthLost = totalHealth - (Math.round(totalHealth / 1.40));
+          healthLost = 6;
           totalHealth = totalHealth - healthLost;
         } else if (healthLostRandom == 8) {
-          healthLost = totalHealth - (Math.round(totalHealth / 1.60));
+          healthLost = 7;
           totalHealth = totalHealth - healthLost;
         } else if (healthLostRandom == 9) {
-          healthLost = totalHealth - (Math.round(totalHealth / 3));
+          healthLost = 8;
           totalHealth = totalHealth - healthLost;
         } else if (healthLostRandom == 10) {
-          healthLost = totalHealth - (Math.round(totalHealth / 5.6));
+          healthLost = 9;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 11) {
+          healthLost = 10;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 12) {
+          healthLost = 11;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 13) {
+          healthLost = 12;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 14) {
+          healthLost = 4
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 15) {
+          healthLost = 5;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 16) {
+          healthLost = 6;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 17) {
+          healthLost = 7;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 18) {
+          healthLost = 8;
+          totalHealth = totalHealth - healthLost;
+        } else if (healthLostRandom == 19) {
+          healthLost = 9;
           totalHealth = totalHealth - healthLost;
         }
       } else if (enemyFoughtRandom == 2) {
