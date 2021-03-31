@@ -31,5 +31,7 @@ bot.on('ready', function () {
 	console.log(`Bot Developer: ${Developer}`);
 	console.log(`Running Version: ${Version}`);
 
+	var userID = message.author.id;
+	
 	db.default({ users: [userID], health: [100] });
 });
