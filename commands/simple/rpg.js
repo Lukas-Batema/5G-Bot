@@ -365,7 +365,7 @@ module.exports = class rpg extends Command {
         .setColor("RANDOM")
         .setTitle("RPG Quick Fight")
         .setDescription(
-          `You fought ` + enemyFought + ` and lost ` + healthLost + ` health. You have ` + totalHealth + ` health left!`
+          discord.User.MessageMentions(`You fought ` + enemyFought + ` and lost ` + healthLost + ` health. You have ` + totalHealth + ` health left!`)
         )
       message.channel.send(rpgQuickFight);
       console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistently annoy GameHogPlays#0119 on Discord of this error!")
