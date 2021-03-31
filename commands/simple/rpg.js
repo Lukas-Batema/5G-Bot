@@ -57,6 +57,9 @@ module.exports = class rpg extends Command {
         enemyFought = "Your Mom";
       } 
 
+      db.get("users").set(userID, totalHealth)
+        .save();
+        
       if (healthLostRandom == 0) {
         healthLost = 0;
       } else if (healthLostRandom == 1) {
@@ -356,7 +359,7 @@ module.exports = class rpg extends Command {
       }
 
       var userID = message.author.id;
-      
+
       db.get("users").set(userID, totalHealth)
         .save();
 
