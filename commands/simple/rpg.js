@@ -356,9 +356,8 @@ module.exports = class rpg extends Command {
       }
 
       var userID = message.author.id;
-
-      db.get("users").set(userID)
-        .get("health").set(totalHealth)
+      
+      db.get("users").set(userID, totalHealth)
         .save();
 
       const rpgQuickFight = new discord.MessageEmbed()
