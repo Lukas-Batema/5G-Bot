@@ -36,7 +36,7 @@ module.exports = class rpg extends Command {
       var enemyFought;
       var totalHealth;
 
-      if (totalHealth == NaN) {
+      if (totalHealth === NaN) {
         totalHealth = 100;
         db.get("users").set(message.author.id, totalHealth)
           .save();
