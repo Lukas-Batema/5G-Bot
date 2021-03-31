@@ -31,5 +31,5 @@ bot.on('ready', function () {
 	console.log(`Bot Developer: ${Developer}`);
 	console.log(`Running Version: ${Version}`);
 
-	db.default({ users: [] });
+	db.default({ users: [], health: [] });
 });
