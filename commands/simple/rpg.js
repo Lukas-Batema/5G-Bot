@@ -18,7 +18,6 @@ module.exports = class rpg extends Command {
   run(message, args) {
     let words = args.split(' ');
     let reason = words.slice(0).join(' ');
-    var totalHealth;
     
     if (reason == "" || reason == "help" || reason == "?") {
       const rpgHelp = new discord.MessageEmbed()
@@ -35,9 +34,12 @@ module.exports = class rpg extends Command {
       var healthLostRandom = Math.floor(Math.random() * 100);
       var healthLost;
       var enemyFought;
+      var totalHealth;
 
       if (totalHealth == NaN) {
         totalHealth = 100;
+        db.get("users").set(message.author.id, totalHealth)
+          .save();
       }
       var userID = message.author.id;
 
