@@ -355,6 +355,8 @@ module.exports = class rpg extends Command {
         totalHealth = totalHealth - healthLost;
       }
 
+      totalHealth.toString;
+      
       db.get("users").set(message.author.id)
         .get("health").set(totalHealth)
         .save();
