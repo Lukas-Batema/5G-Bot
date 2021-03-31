@@ -36,6 +36,10 @@ module.exports = class rpg extends Command {
       var enemyFought;
       var totalHealth;
 
+      if (sNaN(totalHealth)) {
+        totalHealth == 100;
+      }
+
       var userID = message.author.id;
 
       if (enemyFoughtRandom == 1) {
