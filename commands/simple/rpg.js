@@ -35,7 +35,7 @@ module.exports = class rpg extends Command {
       var healthLost;
       var enemyFought;
 
-      db.get("users").set(message.author.id, 100)
+      db.get("users").set(message.author.id, botData.rpgConfig[totalHealth])
         .save();
 
 
@@ -65,298 +65,298 @@ module.exports = class rpg extends Command {
         healthLost = 0;
       } else if (healthLostRandom == 1) {
         healthLost = 1;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 2) {
         healthLost = 2;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 3) {
         healthLost = 3;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 4) {
         healthLost = 4;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 5) {
         healthLost = 5;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 6) {
         healthLost = 6;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 7) {
         healthLost = 7;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 8) {
         healthLost = 8;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 9) {
         healthLost = 9;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 10) {
         healthLost = 10;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 11) {
         healthLost = 11;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 12) {
         healthLost = 12;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 13) {
         healthLost = 13;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 14) {
         healthLost = 14;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 15) {
         healthLost = 15;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 16) {
         healthLost = 16;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 17) {
         healthLost = 17;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 18) {
         healthLost = 18;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 19) {
         healthLost = 19;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 20) {
         healthLost = 20;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 21) {
         healthLost = 21;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 22) {
         healthLost = 22;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 23) {
         healthLost = 23;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 24) {
         healthLost = 24;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 25) {
         healthLost = 25;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 26) {
         healthLost = 26;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 27) {
         healthLost = 27;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 28) {
         healthLost = 28;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 29) {
         healthLost = 29;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 30) {
         healthLost = 30;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 31) {
         healthLost = 31;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 32) {
         healthLost = 32;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 33) {
         healthLost = 33;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 34) {
         healthLost = 34;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 35) {
         healthLost = 35;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 36) {
         healthLost = 36;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 37) {
         healthLost = 37;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 38) {
         healthLost = 38;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 39) {
         healthLost = 39;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 40) {
         healthLost = 40;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 41) {
         healthLost = 41;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 42) {
         healthLost = 42;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 43) {
         healthLost = 43;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 44) {
         healthLost = 44;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 45) {
         healthLost = 45;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 46) {
         healthLost = 46;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 47) {
         healthLost = 48;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 49) {
         healthLost = 49;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 50) {
         healthLost = 50;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 51) {
         healthLost = 51;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 52) {
         healthLost = 52;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 53) {
         healthLost = 53;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 54) {
         healthLost = 54;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 55) {
         healthLost = 55;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 56) {
         healthLost = 56;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 57) {
         healthLost = 57;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 58) {
         healthLost = 58;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 59) {
         healthLost = 60;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 61) {
         healthLost = 61;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 62) {
         healthLost = 62;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 63) {
         healthLost = 63;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 64) {
         healthLost = 64;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 65) {
         healthLost = 65;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 66) {
         healthLost = 66;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 67) {
         healthLost = 67;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 68) {
         healthLost = 68;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 69) {
         healthLost = 69;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 70) {
         healthLost = 70;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 71) {
         healthLost = 71;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 72) {
         healthLost = 72;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 73) {
         healthLost = 73;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 74) {
         healthLost = 74;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 75) {
         healthLost = 75;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 76) {
         healthLost = 76;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 77) {
         healthLost = 77;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 78) {
         healthLost = 78;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 79) {
         healthLost = 79;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 80) {
         healthLost = 80;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 81) {
         healthLost = 81;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 82) {
         healthLost = 82;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 83) {
         healthLost = 83;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 84) {
         healthLost = 84;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 85) {
         healthLost = 85;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 86) {
         healthLost = 86;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 87) {
         healthLost = 87;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 88) {
         healthLost = 88;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 89) {
         healthLost = 89;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 90) {
         healthLost = 90;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 91) {
         healthLost = 91;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 92) {
         healthLost = 92;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 93) {
         healthLost = 93;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 94) {
         healthLost = 94;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 95) {
         healthLost = 95;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 96) {
         healthLost = 96;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 97) {
         healthLost = 97;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 98) {
         healthLost = 98;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 99) {
         healthLost = 99;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 100) {
         healthLost = 100;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       }
 
       db.get("users").set(message.author.id, botData.rpgConfig[totalHealth])
@@ -367,7 +367,7 @@ module.exports = class rpg extends Command {
         .setColor("RANDOM")
         .setTitle("RPG Quick Fight")
         .setDescription(
-          `You fought ` + enemyFought + ` and lost ` + healthLost + ` health. You have ` + botData.rpgConfig[totalHealth] + ` health left!`
+          `You fought ` + enemyFought + ` and lost ` + healthLost + ` health. You have ` + totalHealth + ` health left!`
         )
       message.channel.send(rpgQuickFight);
     } else if (reason == "adventure" || reason == "adv") {
@@ -485,298 +485,298 @@ module.exports = class rpg extends Command {
         healthLost = 0;
       } else if (healthLostRandom == 1) {
         healthLost = 1;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 2) {
         healthLost = 2;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 3) {
         healthLost = 3;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 4) {
         healthLost = 4;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 5) {
         healthLost = 5;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 6) {
         healthLost = 6;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 7) {
         healthLost = 7;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 8) {
         healthLost = 8;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 9) {
         healthLost = 9;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 10) {
         healthLost = 10;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 11) {
         healthLost = 11;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 12) {
         healthLost = 12;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 13) {
         healthLost = 13;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 14) {
         healthLost = 14;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 15) {
         healthLost = 15;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 16) {
         healthLost = 16;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 17) {
         healthLost = 17;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 18) {
         healthLost = 18;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 19) {
         healthLost = 19;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 20) {
         healthLost = 20;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 21) {
         healthLost = 21;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 22) {
         healthLost = 22;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 23) {
         healthLost = 23;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 24) {
         healthLost = 24;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 25) {
         healthLost = 25;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 26) {
         healthLost = 26;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 27) {
         healthLost = 27;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 28) {
         healthLost = 28;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 29) {
         healthLost = 29;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 30) {
         healthLost = 30;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 31) {
         healthLost = 31;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 32) {
         healthLost = 32;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 33) {
         healthLost = 33;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 34) {
         healthLost = 34;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 35) {
         healthLost = 35;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 36) {
         healthLost = 36;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 37) {
         healthLost = 37;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 38) {
         healthLost = 38;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 39) {
         healthLost = 39;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 40) {
         healthLost = 40;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 41) {
         healthLost = 41;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 42) {
         healthLost = 42;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 43) {
         healthLost = 43;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 44) {
         healthLost = 44;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 45) {
         healthLost = 45;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 46) {
         healthLost = 46;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 47) {
         healthLost = 48;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 49) {
         healthLost = 49;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 50) {
         healthLost = 50;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 51) {
         healthLost = 51;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 52) {
         healthLost = 52;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 53) {
         healthLost = 53;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 54) {
         healthLost = 54;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 55) {
         healthLost = 55;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 56) {
         healthLost = 56;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 57) {
         healthLost = 57;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 58) {
         healthLost = 58;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 59) {
         healthLost = 60;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 61) {
         healthLost = 61;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 62) {
         healthLost = 62;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 63) {
         healthLost = 63;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 64) {
         healthLost = 64;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 65) {
         healthLost = 65;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 66) {
         healthLost = 66;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 67) {
         healthLost = 67;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 68) {
         healthLost = 68;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 69) {
         healthLost = 69;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 70) {
         healthLost = 70;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 71) {
         healthLost = 71;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 72) {
         healthLost = 72;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 73) {
         healthLost = 73;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 74) {
         healthLost = 74;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 75) {
         healthLost = 75;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 76) {
         healthLost = 76;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 77) {
         healthLost = 77;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 78) {
         healthLost = 78;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 79) {
         healthLost = 79;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 80) {
         healthLost = 80;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 81) {
         healthLost = 81;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 82) {
         healthLost = 82;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 83) {
         healthLost = 83;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 84) {
         healthLost = 84;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 85) {
         healthLost = 85;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 86) {
         healthLost = 86;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 87) {
         healthLost = 87;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 88) {
         healthLost = 88;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 89) {
         healthLost = 89;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 90) {
         healthLost = 90;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 91) {
         healthLost = 91;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 92) {
         healthLost = 92;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 93) {
         healthLost = 93;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 94) {
         healthLost = 94;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 95) {
         healthLost = 95;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 96) {
         healthLost = 96;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 97) {
         healthLost = 97;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 98) {
         healthLost = 98;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 99) {
         healthLost = 99;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       } else if (healthLostRandom == 100) {
         healthLost = 100;
-        botData.rpgConfig[totalHealth] = botData.rpgConfig[totalHealth] - healthLost;
+        var totalHealth = botData.rpgConfig[totalHealth] - healthLost;
       }
 
       db.get("users").set(userID, botData.rpgConfig[totalHealth])
@@ -787,7 +787,7 @@ module.exports = class rpg extends Command {
         .setColor("RANDOM")
         .setTitle("RPG Adventure")
         .setDescription(
-          `You fought` + enemiesFought + ` and lost` + healthLost + ` health.You have` + botData.rpgConfig[totalHealth] + ` health left!`
+          `You fought` + enemiesFought + ` and lost` + healthLost + ` health.You have` + totalHealth + ` health left!`
         )
       message.channel.send(rpgAdventure);
     } else if (reason == "quests" || reason == "quest" || reason == "qs" || reason == "q") {
