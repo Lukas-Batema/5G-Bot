@@ -13,4 +13,6 @@ var BotConfiguration = [
     activityMessage = "Data Usage High - 5G G5",
 ];
 
-var startingHealth = 100;
+var rpgConfig = [
+    startingHealth = 100,
+];
