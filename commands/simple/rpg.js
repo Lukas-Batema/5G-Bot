@@ -35,7 +35,7 @@ module.exports = class rpg extends Command {
       var healthLost;
       var enemyFought;
 
-      db.get("users").set(message.author.id, rpgConfig[botData.rpgConfig[totalHealth]])
+      db.get("users").set(message.author.id, botData.rpgConfig[totalHealth])
         .save();
 
       var userID = message.author.id;
