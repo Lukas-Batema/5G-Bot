@@ -30,10 +30,8 @@ module.exports = class rpg extends Command {
       message.channel.send(rpgHelp);
       console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistently annoy GameHogPlays#0119 on Discord of this error!")
     } else if (reason == "quickfight" || reason == "quickf" || reason == "qfight" || reason == "qf") {
-      var placeHolderDisplayName = new discord.MessageMentions(discord.User);
-      db.get("users").set(placeHolderDisplayName)
-      .save();
-
+      db.get("users").set(message.author.id)
+        .save();
       var enemyFoughtRandom = Math.floor(Math.random() * 10) + 1;
       var healthLostRandom = Math.floor(Math.random() * 100);
       var healthLost;
@@ -365,7 +363,7 @@ module.exports = class rpg extends Command {
         .setColor("RANDOM")
         .setTitle("RPG Quick Fight")
         .setDescription(
-          discord.User.MessageMentions(`You fought ` + enemyFought + ` and lost ` + healthLost + ` health. You have ` + totalHealth + ` health left!`)
+          `You fought ` + enemyFought + ` and lost ` + healthLost + ` health. You have ` + totalHealth + ` health left!`
         )
       message.channel.send(rpgQuickFight);
       console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistently annoy GameHogPlays#0119 on Discord of this error!")
