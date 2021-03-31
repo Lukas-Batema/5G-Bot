@@ -35,9 +35,9 @@ module.exports = class rpg extends Command {
       var healthLost;
       var enemyFought;
 
-      let totalHealth = 100;
-      db.get("users").set(message.author.id, 100)
+      db.get("users").set(message.author.id, startingHealth)
         .save();
+
       var userID = message.author.id;
 
       if (enemyFoughtRandom == 1) {

@@ -12,3 +12,5 @@ var BotConfiguration = [
     botPrefix = "5G",
     activityMessage = "Data Usage High - 5G G5",
 ];
+
+var startingHealth = 100;
