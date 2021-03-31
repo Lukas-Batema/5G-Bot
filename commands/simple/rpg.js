@@ -36,7 +36,7 @@ module.exports = class rpg extends Command {
       var enemyFought;
       var totalHealth;
 
-      if (isNaN(totalHealth)) {
+      while (isNaN(totalHealth) || totalHealth <= 0) {
         totalHealth = 100;
       }
 
