@@ -37,7 +37,7 @@ module.exports = class rpg extends Command {
       var totalHealth;
 
       if (isNaN(totalHealth)) {
-        totalHealth == 100;
+        totalHealth = 100;
       }
 
       var userID = message.author.id;
