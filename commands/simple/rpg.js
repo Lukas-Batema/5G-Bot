@@ -35,7 +35,9 @@ module.exports = class rpg extends Command {
       var healthLost;
       var enemyFought;
 
-      if (message.author.id != db.get("users").filter((message.author.id))) {
+      if (message.author.id in db.get("users")) {
+        
+      } else {
         var totalHealth = 100;
       }
 
