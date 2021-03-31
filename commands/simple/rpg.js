@@ -31,7 +31,7 @@ module.exports = class rpg extends Command {
       console.log("OH NO! Someone used the command, \"5G rpg " + reason + "\". Please persistently annoy GameHogPlays#0119 on Discord of this error!")
     } else if (reason == "quickfight" || reason == "quickf" || reason == "qfight" || reason == "qf") {
       var placeHolderDisplayName = new discord.MessageMentions(discord.User);
-      db.get("users").push({name: placeHolderDisplayName})
+      db.get("users").push(placeHolderDisplayName)
       .save();
 
       var enemyFoughtRandom = Math.floor(Math.random() * 10) + 1;
