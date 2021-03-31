@@ -355,10 +355,10 @@ module.exports = class rpg extends Command {
         totalHealth = totalHealth - healthLost;
       }
 
-      totalHealth.toString;
-      
+      var totalHealthString = totalHealth.toString;
+
       db.get("users").set(message.author.id)
-        .get("health").set(totalHealth)
+        .get("health").set(totalHealthString)
         .save();
 
       const rpgQuickFight = new discord.MessageEmbed()
