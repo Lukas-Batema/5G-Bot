@@ -34,13 +34,11 @@ module.exports = class rpg extends Command {
       var healthLostRandom = Math.floor(Math.random() * 100);
       var healthLost;
       var enemyFought;
+      var totalHealth;
 
-      if (message.author.id in db.get("users")) {
-        
-      } else {
-        var totalHealth = 100;
+      if (totalHealth == NaN) {
+        totalHealth = 100;
       }
-
       var userID = message.author.id;
 
       if (enemyFoughtRandom == 1) {
