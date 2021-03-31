@@ -14,5 +14,5 @@ var BotConfiguration = [
 ];
 
 var rpgConfig = [
-    totalHealth = 100,
+    totalHealth = Number(100),
 ];

@@ -35,12 +35,9 @@ module.exports = class rpg extends Command {
       var healthLost;
       var enemyFought;
 
-      if (botData.rpgConfig[totalHealth] == undefined) {
       db.get("users").set(message.author.id, 100)
         .save();
-      }
 
-      var userID = message.author.id;
 
       if (enemyFoughtRandom == 1) {
         enemyFought = "Slime";
